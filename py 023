@@ -1,1 +1,7 @@
-
+for i in range(int(input())):
+    s = input()
+    if s==s[::-1]:
+        print("Y")
+    else:
+        s=s.replace(" ","")
+        print("Y"if s==s[::-1]else"N")
