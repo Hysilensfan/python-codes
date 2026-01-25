@@ -1,5 +1,5 @@
 for _ in range(int(input())):
-    s = list(input());t = 0
+    s = list(input());t= 0
     for i in range(len(s)):
         t += int(s[i])
     print(t)
