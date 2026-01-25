@@ -3,5 +3,5 @@ for i in range(int(input())):
     if s==s[::-1]:
         print("Y")
     else:
-        s=s.replace(" ","")
+        s=s.replace(" ","") # equal " s="".join(s.split(" ")) "
         print("Y"if s==s[::-1]else"N")
