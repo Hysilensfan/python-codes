@@ -1,1 +1,1 @@
-a , b = [int(c) for c in input().split()];print((b - a + 200)%200)
+a , b = [int(c) for c in input().split()];print((b - a + 200)%200) # this is a list comprehension's explaining => a,b is what we input that import to c, then, turn c into integer(uses int function) so we can short for a list comprehension:"a , b = [int(c) for c in input().split()])"
