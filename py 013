@@ -1,4 +1,1 @@
-first compose method
-print(int((input())[::-1].lstrip('0')))
-second compose method
 print(int((input())[::-1]))
