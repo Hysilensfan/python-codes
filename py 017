@@ -1,1 +1,10 @@
-
+for _ in range(int(input())):
+    s = int(input());t = True
+    if s < 2:
+        t = False
+    else:
+        for i in range(2, s):
+            if s % i == 0:
+                t = False
+                break
+    print("Y"if t else"N")
