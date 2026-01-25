@@ -1,1 +1,8 @@
-
+tT =tL=0;T="Tiger";L="Lion"
+for _ in range(9):
+    n = input()
+    if n == T:
+        tT+=1
+    else:
+        tL+=1
+print(T if tT > tL else L)
