@@ -24,6 +24,6 @@ for i in range(int(input())):
     print("Y"if f(s) else"N")
 #third compose method
 from math import sqrt
-f = lambda s:s>1 and all(s % i != 0 for i in range(2, int(sqrt(s))+1))  #lamda belike define function.all and any Determine if an object is iterable and check if one of its elements is True.
+f = lambda s:s>1 and all(s % i != 0 for i in range(2, int(sqrt(s))+1))  #lamda belike define function.any Determine if an object is iterable and check if one of its elements is True.
 for i in range(int(input())):
     s = int(input());print("Y"if f(s) else"N")
