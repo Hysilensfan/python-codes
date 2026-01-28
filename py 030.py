@@ -4,4 +4,4 @@ for i in range(int(input())):
         if n!=n[::-1]:
             n=str(int(n)+int(n[::-1]))
         else:
-            print(n)
+            print(n);break
