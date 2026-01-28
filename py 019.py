@@ -1,6 +1,6 @@
 #first compose method
 for _ in range(9):
-    n=  input();tT = tL = 0 #default total value is 0
+    n=  input();tT = tL = 0 #default counting total value is 0
     if n == "Tiger":
         tT += 1
     else:
