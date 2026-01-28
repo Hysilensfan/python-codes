@@ -1,3 +1,4 @@
+#first compose method
 y=int(input())
 ans="Wrong"
 if y>2:
