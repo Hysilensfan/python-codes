@@ -4,6 +4,6 @@ def f(w):
         a *= i;t = (t + a) % 1000000
     return t
 for i in range(int(input())):
-    w = int(input());r = str(f(w));
+    w = int(input());r = str(f(w))
     if len((r)) < 6:r = r.zfill(6)
     print(r)
