@@ -1,4 +1,4 @@
-#first compose method
+#first method
 for _ in range(int(input())):
     s = int(input());t = True
     if s < 2:
@@ -9,7 +9,7 @@ for _ in range(int(input())):
                 t = False
                 break
     print("Y"if t else"N")
-#second compose method
+#second method
 def f(s):
     if s < 2:
         return False
@@ -21,6 +21,6 @@ def f(s):
         return True
 for i in range(int(input())):
     s = int(input());print("Y"if f(s) else"N")
-#third compose method
+#third method
 from math import sqrt;f = lambda s:s>1 and all(s % i != 0 for i in range(2, int(sqrt(s))+1))  #lamda belike define function.any Determine if an object is iterable and check if one of its elements is True.
 for i in range(int(input())):s = int(input());print("Y"if f(s) else"N")
