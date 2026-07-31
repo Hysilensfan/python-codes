@@ -1,5 +1,4 @@
 # first method
-# first method
 def operating(expr: str) -> int:
     nums, ops, i, n = [], [], 0, len(expr)  # i stand for "index"
     while i < n:
