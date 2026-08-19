@@ -21,4 +21,4 @@ from math import sqrt  # "sqrt" calculates the real square root (with decimals);
 f = lambda a, b, c:b ** 2 - a * c * 4
 
 v: int = f(*map(int, input().split()))
-print(f"DR={b / (-2 * a)}" if v == 0 else f"{(-b - sqrt(v)) / (2 * a)} {(-b + sqrt(v)) / (2 * a)}" if v > 0 else "NoSolution")  # Ternary operator.
+print(f"DR={b / (-2 * a)}" if v == 0 else f"{(-b - sqrt(v)) / (2 * a)} {(-b + sqrt(v)) / (2 * a)}" if v > 0 else "NoSolution")  # Complex ternary operator.
