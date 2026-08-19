@@ -1,5 +1,5 @@
 # first method
-dic = {
+dic: dict = {
     "A":(1,0),"B":(1,1),"C":(1,2),"D":(1,3),"E":(1,4),
     "F":(1,5),"G":(1,6),"H":(1,7),"I":(3,4),"J":(1,8),
     "K":(1,9),"L":(2,0),"M":(2,1),"N":(2,2),"O":(3,5),
@@ -9,14 +9,25 @@ dic = {
 }
 wei = "1987654321"
 for i in range(int(input())):
-    t = input();tot=0
-    if len(t) != 10:print("F");continue
-    if t[0] not in dic:print("F");continue
-    if not t[2:].isdigit():print("F");continue
-    if t[1] not in "12":print("F");continue
-    n1,n2 =dic[t[0]];n3,n4,n5,n6,n7,n8,n9,n10,n11 = [int(i) for i in t[1:]];l = [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11]
-    for c in range(10):tot+=l[c] * int(wei[c])
-    tot+=l[10];print("F" if tot %10 != 0 else "T")
+    t = input()
+    tot = 0
+    if len(t) != 10:
+        print("F")
+        continue
+    if t[0] not in dic:
+        print("F")
+        continue
+    if not t[2:].isdigit():
+        print("F")
+        continue
+    if t[1] not in "12":
+        print("F")
+        continue
+    n1, n2 = dic[t[0]]
+    n3, n4, n5, n6, n7, n8, n9, n10, n11 = [int(i) for i in t[1:]];l = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11]
+    for c in range(10):
+        tot += l[c] * int(wei[c])
+    tot += l[10];print("F" if tot %10 != 0 else "T")
 # second method
 a = {
     'A': (1, 0), 'B': (1, 1), 'C': (1, 2), 'D': (1, 3), 'E': (1, 4),
