@@ -5,10 +5,10 @@ def happy(s: int):
         if s in n:
             break
         n.add(s)
-        t = 0
+        t: int = 0
         for e in range(len(str(s))):  # Digit sum.
             t += int(str(s)[e]) ** 2
-        s = t
+        s: int = t
     else:
         return True
     return False
