@@ -18,8 +18,8 @@ for _ in range(int(input())):
     else:
         print('F')
 # Second method
-weight: tuple = (2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1)
-credit_card = lambda s: 'T' if divmod(sum([sum(map(int, str(x))) * y for x, y in zip(s, weight)]), 10)[1] and len(
+weight: tuple = (2 , 1) * 8
+credit_card = lambda s: 'T' if not divmod(sum([sum(map(int, str(int(x) * y))) for x, y in zip(s, weight)]), 10)[1] and len(
     s) == 16 else 'F'  # divmod() function will return tuple that include quotient and remainder from two parameters.
 
 [print(credit_card(input())) for _ in range(int(input()))]
