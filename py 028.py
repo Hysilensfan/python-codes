@@ -18,7 +18,7 @@ for i in range(int(input())):
     print("T" if happy(int(input())) else"F")
 
 # Second method
-def isHappy(self, n: int) -> bool:
+def happy(: int) -> bool:
     dire: set = set()
     while n != 1 and n not in dire:
         dire.add(n)
