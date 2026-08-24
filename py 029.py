@@ -1,4 +1,5 @@
 from sys import stdin as c
+
 for i in c:
     try:
         a, b = map(int, i.split())
