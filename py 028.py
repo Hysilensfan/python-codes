@@ -18,13 +18,12 @@ for i in range(int(input())):
     print("T" if happy(int(input())) else"F")
 
 # Second method
-class Solution:
-    def isHappy(self, n: int) -> bool:
-        dire: set = set()
-        while n != 1 and n not in dire:
-            dire.add(n)
-            n: int = sum(int(c) ** 2 for c in str(n))
-        return n == 1
+def isHappy(self, n: int) -> bool:
+    dire: set = set()
+    while n != 1 and n not in dire:
+        dire.add(n)
+        n: int = sum(int(c) ** 2 for c in str(n))
+    return n == 1
 
 
 [print("T" if happy(int(input())) else"F") for _ in range(int(input()))]
