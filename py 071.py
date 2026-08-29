@@ -1,5 +1,5 @@
-def report(v):
-    r, k = '', 1
+def report(v: str) -> str:
+    r, k = "", 1
     for i in range(1, len(v)):
         if v[i] == v[i - 1]:
             k += 1
@@ -9,5 +9,5 @@ def report(v):
     r += v[-1] + str(k)
     return r
 
-for _ in range(int(input())):
-    print(report(input()))
+
+[print(report(input())) for _ in range(int(input()))]
