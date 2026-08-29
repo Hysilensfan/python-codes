@@ -1,7 +1,7 @@
 from sys import stdin as std
 from collections import Counter as Cou
 
-Iie = []
+Iie: list = []
 for k in std:
     Iie.append(k.strip())
     if len(Iie) == 2:
