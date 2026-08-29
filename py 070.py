@@ -10,5 +10,4 @@ def report(v):
     return r
 
 
-for _ in range(int(input())):
-    print(report(input()))
+[print(report(input())) for _ in range(int(input()))]
