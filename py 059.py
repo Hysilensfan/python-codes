@@ -39,5 +39,4 @@ def operating(expr: str) -> int:
 [print("TRUE" if all(a == c for a, c in [map(operating, input().split("=="))]) else "FALSE") for _ in range(4)]
 
 # second method
-[print("TRUE" if all(a == c for a, c in [map(eval, input().split("=="))]) else "FALSE") for _ in range(4)]
-
+[print("TRUE" if eval(input()) else "FALSE") for _ in range(4)]
