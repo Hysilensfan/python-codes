@@ -1,5 +1,5 @@
 # First method
-def F(n):
+def F(n: int) -> int:
     if n == 0:
         return 1
     tot = 0
@@ -28,5 +28,6 @@ def symmetric_bst(d: int) -> int:
             tot += recursive[left] * recursive[right]
         recursive.append(tot)
     return recursive[(d - 1) // 2]  # This position is used to find the mirrored left subtree.
+
 
 [print(symmetric_bst(int(input()))) for _ in range(int(input()))]
