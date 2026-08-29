@@ -1,9 +1,9 @@
-def operation(g):
-    stack = []
+def operation(g: str) -> int:
+    stack: list = []
     for token in input().split():
-        if token.isdigit():
+        if token.isdigit():  # Is a digit, push the number.
             stack.append(int(token))
-        else:
+        else:  # Else get 2 digits, then operating.
             b, a = stack.pop(), stack.pop()
             if token == '+':
                 stack.append(a + b)
@@ -14,5 +14,6 @@ def operation(g):
             elif token == '/':
                 stack.append(a // b)
     return stack[0]
-for _ in range(int(input())):
-    print(operation(input()))
+
+
+[print(operation(input())) for _ in range(int(input()))]
